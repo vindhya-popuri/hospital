@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.name {
+      color: rgb(6, 63, 109);
+    position: absolute;
+    top: 5%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    transition-duration: 5s;
+    font-size: 40px;
+    font-weight: bold;
+    object-fit: cover;
+  }
+
+
+img:hover {
+  /*border: 1px solid rgb(16, 86, 143); */
+  box-shadow: 0 8px 10px 0 rgb(33, 219, 243);
+  border-radius: 5%;
+  transform: scale(1.05); 
+}
+
+img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: transform .2s;
+  margin: 15px;
+  border: 15px;
+}
+
+        .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 11px;
+  border: 10px;
+}
+
+.column img {
+  margin-top: 70px;
+  margin-left: 30px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    </style>
+</head>
+<body bgcolor="#e6ffff">
+    <div class="name">Pandu Children's Hospital</div>
+
+    <div class="row">
+        <div class="column">
+          <img src="1.jpg">
+          <img src="2.jpg">
+        </div>
+        <div class="column">
+            <img src="1.jpg">
+            <img src="2.jpg">
+          </div>
+          <div class="column">
+            <img src="1.jpg">
+            <img src="2.jpg">
+          </div>
+    </div>
+</body>
+</html>
